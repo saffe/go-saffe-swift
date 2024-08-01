@@ -1,7 +1,7 @@
 import UIKit
 import WebKit
 
-class ViewController: UIViewController {
+class GoSaffeCapture: UIViewController {
 
     var webView: WKWebView?
     let captureKey: String
@@ -86,7 +86,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: WKNavigationDelegate {
+extension GoSaffeCapture: WKNavigationDelegate {
 
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         let script = """
@@ -105,7 +105,7 @@ extension ViewController: WKNavigationDelegate {
 
 }
 
-extension ViewController: WKScriptMessageHandler {
+extension GoSaffeCapture: WKScriptMessageHandler {
 
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         if message.name == "receiveMessage" {
