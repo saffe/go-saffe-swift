@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'go-saffe-swift'
   s.version          = '1.0.0'
-  s.summary          = 'A short description of go-saffe-swift.'
+  s.summary          = 'Go saffe capture component for swift'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  Go saffe capture component for swift
                        DESC
 
   s.homepage         = 'https://github.com/saffe/go-saffe-swift'
