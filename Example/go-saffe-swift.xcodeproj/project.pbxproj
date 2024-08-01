@@ -18,6 +18,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3D6505612C5BF94000EC51F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D65055B2C5BF94000EC51F1 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4E6A027C0E015B727CC99D0DB9810D83;
+			remoteInfo = "go-saffe-swift";
+		};
+		3D6505632C5BF94000EC51F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D65055B2C5BF94000EC51F1 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D0A782017DE61428EED834E98796DEEC;
+			remoteInfo = "Pods-go-saffe-swift_Example";
+		};
+		3D6505652C5BF94000EC51F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D65055B2C5BF94000EC51F1 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE6EC7CB9D5AE12F8E8126767B46EB51;
+			remoteInfo = "Pods-go-saffe-swift_Tests";
+		};
 		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
@@ -28,7 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		12444188FE48D84ED624FD37 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		12444188FE48D84ED624FD37 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3D65055B2C5BF94000EC51F1 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* go-saffe-swift_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "go-saffe-swift_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,11 +63,11 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		68ADD7738DB451E06A94F90D /* Pods-go-saffe-swift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-go-saffe-swift_Tests.release.xcconfig"; path = "Target Support Files/Pods-go-saffe-swift_Tests/Pods-go-saffe-swift_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		805C626E183A1EF249C6DAC5 /* Pods-go-saffe-swift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-go-saffe-swift_Example.release.xcconfig"; path = "Target Support Files/Pods-go-saffe-swift_Example/Pods-go-saffe-swift_Example.release.xcconfig"; sourceTree = "<group>"; };
-		AEF29CBB20865D656C953CCA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AEF29CBB20865D656C953CCA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B411E500147123042ECBBD9A /* Pods_go_saffe_swift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_go_saffe_swift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B840BEA9C8A10F26BBDFFA5B /* Pods-go-saffe-swift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-go-saffe-swift_Example.debug.xcconfig"; path = "Target Support Files/Pods-go-saffe-swift_Example/Pods-go-saffe-swift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BADE1B476B46549925845B2D /* Pods_go_saffe_swift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_go_saffe_swift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C12321698229ADC51442EEF8 /* go-saffe-swift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "go-saffe-swift.podspec"; path = "../go-saffe-swift.podspec"; sourceTree = "<group>"; };
+		C12321698229ADC51442EEF8 /* go-saffe-swift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "go-saffe-swift.podspec"; path = "../go-saffe-swift.podspec"; sourceTree = "<group>"; };
 		D079CD8FD9CA1A6FFA5E3957 /* Pods-go-saffe-swift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-go-saffe-swift_Tests.debug.xcconfig"; path = "Target Support Files/Pods-go-saffe-swift_Tests/Pods-go-saffe-swift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,9 +91,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D65055C2C5BF94000EC51F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D6505622C5BF94000EC51F1 /* go-saffe-swift */,
+				3D6505642C5BF94000EC51F1 /* Pods-go-saffe-swift_Example */,
+				3D6505662C5BF94000EC51F1 /* Pods-go-saffe-swift_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				3D65055B2C5BF94000EC51F1 /* Pods.xcodeproj */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for go-saffe-swift */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -147,7 +180,6 @@
 				D079CD8FD9CA1A6FFA5E3957 /* Pods-go-saffe-swift_Tests.debug.xcconfig */,
 				68ADD7738DB451E06A94F90D /* Pods-go-saffe-swift_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,12 +259,19 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3D65055C2C5BF94000EC51F1 /* Products */;
+					ProjectRef = 3D65055B2C5BF94000EC51F1 /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* go-saffe-swift_Example */,
@@ -240,6 +279,33 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3D6505622C5BF94000EC51F1 /* go-saffe-swift */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = "go-saffe-swift";
+			path = go_saffe_swift.framework;
+			remoteRef = 3D6505612C5BF94000EC51F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D6505642C5BF94000EC51F1 /* Pods-go-saffe-swift_Example */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = "Pods-go-saffe-swift_Example";
+			path = Pods_go_saffe_swift_Example.framework;
+			remoteRef = 3D6505632C5BF94000EC51F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D6505662C5BF94000EC51F1 /* Pods-go-saffe-swift_Tests */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = "Pods-go-saffe-swift_Tests";
+			path = Pods_go_saffe_swift_Tests.framework;
+			remoteRef = 3D6505652C5BF94000EC51F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		607FACCE1AFB9204008FA782 /* Resources */ = {

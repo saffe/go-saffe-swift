@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3BBD0936DD0143A1B42C79E5F940EF67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		3D6505692C5BF9AD00EC51F1 /* GoSaffeCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6505682C5BF9AD00EC51F1 /* GoSaffeCapture.swift */; };
 		40E4CD30D04EC705DFD8619778BD279E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		6A753D8579EC1782A7BF838F9C73B694 /* Pods-go-saffe-swift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ACD7AC2BDBEADD769EC12B1E14F46F9 /* Pods-go-saffe-swift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AEBA5D600C9DE964436280D4E9D2BCB5 /* Pods-go-saffe-swift_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 225B873701ACDC43465D056E316B0024 /* Pods-go-saffe-swift_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7AB23E8E6A6408B118008229F1BE0AC /* go-saffe-swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89DD56C2C1F49202BB964A70D95FF15E /* go-saffe-swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0ABC26A960831B653A6F4EFA5EBA1A1 /* go-saffe-swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A4BEC70FC52E7F43205B126D50164F /* go-saffe-swift-dummy.m */; };
-		CA5C56167FD1A19AD9490A5157656623 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B382C6E90D4D90304BA55AD710056C2A /* ReplaceMe.swift */; };
 		D45C25023856A8C7B1BCDDFC7CBFA5FA /* Pods-go-saffe-swift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4670CB8A65C1661C52D82C6435F303CC /* Pods-go-saffe-swift_Tests-dummy.m */; };
 		E02F42B91D72F7307AB29CECD1BC7666 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		EBDC5204877C943EDBAD9F07666C96E0 /* Pods-go-saffe-swift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3368D8F47DA4171D5B1549C3FAEA2C5A /* Pods-go-saffe-swift_Example-dummy.m */; };
@@ -43,13 +43,14 @@
 		1C9348FE6891359767E3E851EA76AD28 /* Pods-go-saffe-swift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-go-saffe-swift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2104C2F5E79CE76E7D0E31970BC8F65B /* Pods-go-saffe-swift_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-go-saffe-swift_Tests-Info.plist"; sourceTree = "<group>"; };
 		225B873701ACDC43465D056E316B0024 /* Pods-go-saffe-swift_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-go-saffe-swift_Tests-umbrella.h"; sourceTree = "<group>"; };
-		30FA2C2DC2620520AAEF80AD5E29788D /* go-saffe-swift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "go-saffe-swift.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		30FA2C2DC2620520AAEF80AD5E29788D /* go-saffe-swift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = "go-saffe-swift.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3368D8F47DA4171D5B1549C3FAEA2C5A /* Pods-go-saffe-swift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-go-saffe-swift_Example-dummy.m"; sourceTree = "<group>"; };
 		36710567240803305CFDFB1BECCCE3B0 /* Pods-go-saffe-swift_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-go-saffe-swift_Tests.modulemap"; sourceTree = "<group>"; };
+		3D6505682C5BF9AD00EC51F1 /* GoSaffeCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoSaffeCapture.swift; sourceTree = "<group>"; };
 		4670CB8A65C1661C52D82C6435F303CC /* Pods-go-saffe-swift_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-go-saffe-swift_Tests-dummy.m"; sourceTree = "<group>"; };
 		4ACD7AC2BDBEADD769EC12B1E14F46F9 /* Pods-go-saffe-swift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-go-saffe-swift_Example-umbrella.h"; sourceTree = "<group>"; };
 		4CA0E8E3DE23408AD1AAB0E2156C5E0A /* Pods-go-saffe-swift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-go-saffe-swift_Example-frameworks.sh"; sourceTree = "<group>"; };
-		4E6A027C0E015B727CC99D0DB9810D83 /* go-saffe-swift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "go-saffe-swift"; path = go_saffe_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E6A027C0E015B727CC99D0DB9810D83 /* go_saffe_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = go_saffe_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		546F5FDF77EB054DB3BC107B6674BF2A /* Pods-go-saffe-swift_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-go-saffe-swift_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		5AA21B86A08C38D87CD8FF6C0F3EA492 /* Pods-go-saffe-swift_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-go-saffe-swift_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -57,17 +58,16 @@
 		7B05F4D6E8E104BB4ADA56A1F8982734 /* go-saffe-swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "go-saffe-swift-Info.plist"; sourceTree = "<group>"; };
 		7F286C317A96995103BF7B081529E6D3 /* Pods-go-saffe-swift_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-go-saffe-swift_Example.modulemap"; sourceTree = "<group>"; };
 		86817DE510A92075F9A7AAC6E1DB4080 /* Pods-go-saffe-swift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-go-saffe-swift_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		891C8A6DD00A7FA8C70BA80BD4E8FD67 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		891C8A6DD00A7FA8C70BA80BD4E8FD67 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		89DD56C2C1F49202BB964A70D95FF15E /* go-saffe-swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "go-saffe-swift-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B08CD53249A5A1BE0ED74B079FFB51F8 /* Pods-go-saffe-swift_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-go-saffe-swift_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B382C6E90D4D90304BA55AD710056C2A /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = "go-saffe-swift/Classes/ReplaceMe.swift"; sourceTree = "<group>"; };
 		B5FE0BFBF02A27E634FF7DA0DBF34F18 /* go-saffe-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "go-saffe-swift.release.xcconfig"; sourceTree = "<group>"; };
 		B9F4038A5EA19F8D8D196F441CA9929B /* Pods-go-saffe-swift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-go-saffe-swift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C0E73A1FCE32BBDC74AC04408AD76D13 /* go-saffe-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "go-saffe-swift.debug.xcconfig"; sourceTree = "<group>"; };
 		CF759B9EFDC7C81A970A4FCE1773E07F /* Pods-go-saffe-swift_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-go-saffe-swift_Example-Info.plist"; sourceTree = "<group>"; };
 		D0A782017DE61428EED834E98796DEEC /* Pods-go-saffe-swift_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-go-saffe-swift_Example"; path = Pods_go_saffe_swift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDE8D1DBBDBAE760F5C963192C0AE18B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		DDE8D1DBBDBAE760F5C963192C0AE18B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EE6EC7CB9D5AE12F8E8126767B46EB51 /* Pods-go-saffe-swift_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-go-saffe-swift_Tests"; path = Pods_go_saffe_swift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDE858E2976CE479142768C15189874E /* Pods-go-saffe-swift_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-go-saffe-swift_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +117,14 @@
 			path = "Target Support Files/Pods-go-saffe-swift_Example";
 			sourceTree = "<group>";
 		};
+		3D6505672C5BF98B00EC51F1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3D6505682C5BF9AD00EC51F1 /* GoSaffeCapture.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,7 +154,7 @@
 		9E7F42F887D0181AAE6612860C051E71 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4E6A027C0E015B727CC99D0DB9810D83 /* go-saffe-swift */,
+				4E6A027C0E015B727CC99D0DB9810D83 /* go_saffe_swift.framework */,
 				D0A782017DE61428EED834E98796DEEC /* Pods-go-saffe-swift_Example */,
 				EE6EC7CB9D5AE12F8E8126767B46EB51 /* Pods-go-saffe-swift_Tests */,
 			);
@@ -215,7 +223,7 @@
 		FFA17F39BB9A29721EA0C55CE8182717 /* go-saffe-swift */ = {
 			isa = PBXGroup;
 			children = (
-				B382C6E90D4D90304BA55AD710056C2A /* ReplaceMe.swift */,
+				3D6505672C5BF98B00EC51F1 /* Classes */,
 				995F25AF4E069737EFF8AB1702900D90 /* Pod */,
 				DEBF6F1118BD3115F62AB25D849F3CEB /* Support Files */,
 			);
@@ -287,7 +295,7 @@
 			);
 			name = "go-saffe-swift";
 			productName = go_saffe_swift;
-			productReference = 4E6A027C0E015B727CC99D0DB9810D83 /* go-saffe-swift */;
+			productReference = 4E6A027C0E015B727CC99D0DB9810D83 /* go_saffe_swift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FD67C260F732074C0328440035D46918 /* Pods-go-saffe-swift_Example */ = {
@@ -317,8 +325,13 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					E8D2F37C1613B603A6F85631746F2F38 = {
+						LastSwiftMigration = 1540;
+					};
+				};
 			};
-			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "_Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -383,8 +396,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D6505692C5BF9AD00EC51F1 /* GoSaffeCapture.swift in Sources */,
 				C0ABC26A960831B653A6F4EFA5EBA1A1 /* go-saffe-swift-dummy.m in Sources */,
-				CA5C56167FD1A19AD9490A5157656623 /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,8 +541,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -573,6 +585,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C0E73A1FCE32BBDC74AC04408AD76D13 /* go-saffe-swift.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -593,6 +606,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -670,6 +684,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B5FE0BFBF02A27E634FF7DA0DBF34F18 /* go-saffe-swift.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -734,7 +749,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "_Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
