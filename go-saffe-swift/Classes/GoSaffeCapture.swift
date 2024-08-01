@@ -9,12 +9,16 @@ class GoSaffeCapture: UIViewController {
     let type: String
     let endToEndId: String
     var isMessageReceived = false
+    let onClose: () -> Void
+    let onFinish: () -> Void
     
-    init(captureKey: String, userIdentifier: String, type: String, endToEndId: String) {
+    init(captureKey: String, userIdentifier: String, type: String, endToEndId: String, onClose: @escaping () -> Void, onFinish: @escaping () -> Void) {
         self.captureKey = captureKey
         self.userIdentifier = userIdentifier
         self.type = type
         self.endToEndId = endToEndId
+        self.onClose = onClose
+        self.onFinish = onFinish
         super.init(nibName: nil, bundle: nil)
         self.webView = WKWebView(frame: .zero, configuration: WKWebViewConfiguration())
         self.webView?.navigationDelegate = self
@@ -25,6 +29,8 @@ class GoSaffeCapture: UIViewController {
         self.userIdentifier = ""
         self.type = ""
         self.endToEndId = ""
+        self.onClose = {}
+        self.onFinish = {}
         super.init(coder: coder)
     }
     
@@ -120,12 +126,14 @@ extension GoSaffeCapture: WKScriptMessageHandler {
                     webView?.navigationDelegate = nil
                     webView?.configuration.userContentController.removeScriptMessageHandler(forName: "receiveMessage")
                     webView?.stopLoading()
+                    onClose()
                 } else if event == "finish" && !isMessageReceived {
                     isMessageReceived = true
                     webView = nil
                     webView?.navigationDelegate = nil
                     webView?.configuration.userContentController.removeScriptMessageHandler(forName: "receiveMessage")
                     webView?.stopLoading()
+                    onFinish()
                 }
             }
         }
