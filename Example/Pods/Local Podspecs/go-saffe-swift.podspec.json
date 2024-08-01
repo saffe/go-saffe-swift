@@ -1,0 +1,22 @@
+{
+  "name": "go-saffe-swift",
+  "version": "0.1.0",
+  "summary": "A short description of go-saffe-swift.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Pedro Cruz/go-saffe-swift",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Pedro Cruz": "pedrovictor.lage@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Pedro Cruz/go-saffe-swift.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "go-saffe-swift/Classes/**/*"
+}
