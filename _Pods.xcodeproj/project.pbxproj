@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3BBD0936DD0143A1B42C79E5F940EF67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		3D6505692C5BF9AD00EC51F1 /* GoSaffeCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6505682C5BF9AD00EC51F1 /* GoSaffeCapture.swift */; };
 		40E4CD30D04EC705DFD8619778BD279E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		6A753D8579EC1782A7BF838F9C73B694 /* Pods-go-saffe-swift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ACD7AC2BDBEADD769EC12B1E14F46F9 /* Pods-go-saffe-swift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AEBA5D600C9DE964436280D4E9D2BCB5 /* Pods-go-saffe-swift_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 225B873701ACDC43465D056E316B0024 /* Pods-go-saffe-swift_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -46,7 +45,6 @@
 		30FA2C2DC2620520AAEF80AD5E29788D /* go-saffe-swift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = "go-saffe-swift.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3368D8F47DA4171D5B1549C3FAEA2C5A /* Pods-go-saffe-swift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-go-saffe-swift_Example-dummy.m"; sourceTree = "<group>"; };
 		36710567240803305CFDFB1BECCCE3B0 /* Pods-go-saffe-swift_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-go-saffe-swift_Tests.modulemap"; sourceTree = "<group>"; };
-		3D6505682C5BF9AD00EC51F1 /* GoSaffeCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoSaffeCapture.swift; sourceTree = "<group>"; };
 		4670CB8A65C1661C52D82C6435F303CC /* Pods-go-saffe-swift_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-go-saffe-swift_Tests-dummy.m"; sourceTree = "<group>"; };
 		4ACD7AC2BDBEADD769EC12B1E14F46F9 /* Pods-go-saffe-swift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-go-saffe-swift_Example-umbrella.h"; sourceTree = "<group>"; };
 		4CA0E8E3DE23408AD1AAB0E2156C5E0A /* Pods-go-saffe-swift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-go-saffe-swift_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -115,14 +113,6 @@
 			);
 			name = "Pods-go-saffe-swift_Example";
 			path = "Target Support Files/Pods-go-saffe-swift_Example";
-			sourceTree = "<group>";
-		};
-		3D6505672C5BF98B00EC51F1 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				3D6505682C5BF9AD00EC51F1 /* GoSaffeCapture.swift */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -223,7 +213,6 @@
 		FFA17F39BB9A29721EA0C55CE8182717 /* go-saffe-swift */ = {
 			isa = PBXGroup;
 			children = (
-				3D6505672C5BF98B00EC51F1 /* Classes */,
 				995F25AF4E069737EFF8AB1702900D90 /* Pod */,
 				DEBF6F1118BD3115F62AB25D849F3CEB /* Support Files */,
 			);
@@ -396,7 +385,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D6505692C5BF9AD00EC51F1 /* GoSaffeCapture.swift in Sources */,
 				C0ABC26A960831B653A6F4EFA5EBA1A1 /* go-saffe-swift-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
