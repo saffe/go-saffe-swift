@@ -5,16 +5,16 @@ public class GoSaffeCapture: UIViewController {
 
     var webView: WKWebView?
     let captureKey: String
-    let userIdentifier: String
+    let user: String
     let type: String
     let endToEndId: String
     var isMessageReceived = false
     let onClose: () -> Void
     let onFinish: () -> Void
     
-    public init(captureKey: String, userIdentifier: String, type: String, endToEndId: String, onClose: @escaping () -> Void, onFinish: @escaping () -> Void) {
+    public init(captureKey: String, user: String, type: String, endToEndId: String, onClose: @escaping () -> Void, onFinish: @escaping () -> Void) {
         self.captureKey = captureKey
-        self.userIdentifier = userIdentifier
+        self.user = user
         self.type = type
         self.endToEndId = endToEndId
         self.onClose = onClose
@@ -26,7 +26,7 @@ public class GoSaffeCapture: UIViewController {
     
     required init?(coder: NSCoder) {
         self.captureKey = ""
-        self.userIdentifier = ""
+        self.user = ""
         self.type = ""
         self.endToEndId = ""
         self.onClose = {}
@@ -76,7 +76,7 @@ public class GoSaffeCapture: UIViewController {
         }
         let json: [String: Any] = [
             "capture_key": captureKey,
-            "user_identifier": userIdentifier,
+            "user_identifier": user,
             "type": type,
             "end_to_end_id": endToEndId
         ]
@@ -106,7 +106,6 @@ extension GoSaffeCapture: WKNavigationDelegate {
     }
 
     public func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-        // Falha na navegação
     }
 
 }
