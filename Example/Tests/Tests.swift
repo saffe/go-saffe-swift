@@ -45,7 +45,7 @@ class Tests: XCTestCase {
     
     func testWebViewLoading() {
         // Teste para verificar se o webView está sendo carregado corretamente
-        goSaffeCapture.loadLiveness()
+        goSaffeCapture.loadWebView()
         
         // Verifique se o webView não é nulo
         XCTAssertNotNil(goSaffeCapture.webView)

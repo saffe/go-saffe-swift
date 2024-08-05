@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3BBD0936DD0143A1B42C79E5F940EF67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		40E4CD30D04EC705DFD8619778BD279E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		16EAA86F8D9DB5714975D18BAE907F31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6406D347F5B7E18CF968F77629C4F06E /* Foundation.framework */; };
+		3BBD0936DD0143A1B42C79E5F940EF67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6406D347F5B7E18CF968F77629C4F06E /* Foundation.framework */; };
+		4A422CF1C6463C734E932E017B2EC320 /* GoSaffeCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06B1A950DCA96B4EB3D977E7598274F /* GoSaffeCapture.swift */; };
+		56450B9728B718B3C66D25921F3F04AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9C27F7E6D7B02625DF3B111E5192591 /* UIKit.framework */; };
 		6A753D8579EC1782A7BF838F9C73B694 /* Pods-go-saffe-swift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ACD7AC2BDBEADD769EC12B1E14F46F9 /* Pods-go-saffe-swift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA45EBFDD9B2BD14D83658036586B3FB /* go-saffe-swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EBB66A58BAD935D66234EC8ED1DF56 /* go-saffe-swift-dummy.m */; };
 		AEBA5D600C9DE964436280D4E9D2BCB5 /* Pods-go-saffe-swift_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 225B873701ACDC43465D056E316B0024 /* Pods-go-saffe-swift_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B7AB23E8E6A6408B118008229F1BE0AC /* go-saffe-swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89DD56C2C1F49202BB964A70D95FF15E /* go-saffe-swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C0ABC26A960831B653A6F4EFA5EBA1A1 /* go-saffe-swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A4BEC70FC52E7F43205B126D50164F /* go-saffe-swift-dummy.m */; };
-		CA5C56167FD1A19AD9490A5157656623 /* GoSaffeCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = B382C6E90D4D90304BA55AD710056C2A /* GoSaffeCapture.swift */; };
+		B71FF6AEC9773F3ABBF3CD60352E3AF1 /* go-saffe-swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7C9978096ECF3A9F7EAC791612E9A4D /* go-saffe-swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D45C25023856A8C7B1BCDDFC7CBFA5FA /* Pods-go-saffe-swift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4670CB8A65C1661C52D82C6435F303CC /* Pods-go-saffe-swift_Tests-dummy.m */; };
-		E02F42B91D72F7307AB29CECD1BC7666 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DE73733A2AB8DA9C9085F37F31BF9E4F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F84C2F2F12231A8BDB489A37492222 /* WebKit.framework */; };
+		E02F42B91D72F7307AB29CECD1BC7666 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6406D347F5B7E18CF968F77629C4F06E /* Foundation.framework */; };
 		EBDC5204877C943EDBAD9F07666C96E0 /* Pods-go-saffe-swift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3368D8F47DA4171D5B1549C3FAEA2C5A /* Pods-go-saffe-swift_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +29,7 @@
 			remoteGlobalIDString = E8D2F37C1613B603A6F85631746F2F38;
 			remoteInfo = "go-saffe-swift";
 		};
-		B73F7817DD6F620CA19D09CB74C92810 /* PBXContainerItemProxy */ = {
+		1C208319BED13D0677592856182113A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -38,46 +40,50 @@
 
 /* Begin PBXFileReference section */
 		0A3ADA4344AE0855DFA341C4A1DABB0F /* Pods-go-saffe-swift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-go-saffe-swift_Example.release.xcconfig"; sourceTree = "<group>"; };
-		0C088B2C9963BADD399DAFCFA64CA0DE /* go-saffe-swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "go-saffe-swift.modulemap"; sourceTree = "<group>"; };
-		14701D1501F510F423FC067269320C18 /* go-saffe-swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "go-saffe-swift-prefix.pch"; sourceTree = "<group>"; };
+		11980E8C8395D8FF0C5FD48624F9DD45 /* go-saffe-swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "go-saffe-swift-prefix.pch"; sourceTree = "<group>"; };
+		14F84C2F2F12231A8BDB489A37492222 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
 		1C9348FE6891359767E3E851EA76AD28 /* Pods-go-saffe-swift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-go-saffe-swift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2104C2F5E79CE76E7D0E31970BC8F65B /* Pods-go-saffe-swift_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-go-saffe-swift_Tests-Info.plist"; sourceTree = "<group>"; };
 		225B873701ACDC43465D056E316B0024 /* Pods-go-saffe-swift_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-go-saffe-swift_Tests-umbrella.h"; sourceTree = "<group>"; };
-		30FA2C2DC2620520AAEF80AD5E29788D /* go-saffe-swift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = "go-saffe-swift.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		30DE087F0BD5C26EE751728C81420A34 /* go-saffe-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "go-saffe-swift.debug.xcconfig"; sourceTree = "<group>"; };
+		30EBB66A58BAD935D66234EC8ED1DF56 /* go-saffe-swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "go-saffe-swift-dummy.m"; sourceTree = "<group>"; };
 		3368D8F47DA4171D5B1549C3FAEA2C5A /* Pods-go-saffe-swift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-go-saffe-swift_Example-dummy.m"; sourceTree = "<group>"; };
 		36710567240803305CFDFB1BECCCE3B0 /* Pods-go-saffe-swift_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-go-saffe-swift_Tests.modulemap"; sourceTree = "<group>"; };
 		4670CB8A65C1661C52D82C6435F303CC /* Pods-go-saffe-swift_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-go-saffe-swift_Tests-dummy.m"; sourceTree = "<group>"; };
 		4ACD7AC2BDBEADD769EC12B1E14F46F9 /* Pods-go-saffe-swift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-go-saffe-swift_Example-umbrella.h"; sourceTree = "<group>"; };
 		4CA0E8E3DE23408AD1AAB0E2156C5E0A /* Pods-go-saffe-swift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-go-saffe-swift_Example-frameworks.sh"; sourceTree = "<group>"; };
 		4E6A027C0E015B727CC99D0DB9810D83 /* go-saffe-swift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "go-saffe-swift"; path = go_saffe_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51E1FA5C346C2E09AFEE27100CC52370 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		546F5FDF77EB054DB3BC107B6674BF2A /* Pods-go-saffe-swift_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-go-saffe-swift_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		5AA21B86A08C38D87CD8FF6C0F3EA492 /* Pods-go-saffe-swift_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-go-saffe-swift_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		76A4BEC70FC52E7F43205B126D50164F /* go-saffe-swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "go-saffe-swift-dummy.m"; sourceTree = "<group>"; };
-		7B05F4D6E8E104BB4ADA56A1F8982734 /* go-saffe-swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "go-saffe-swift-Info.plist"; sourceTree = "<group>"; };
+		5E0E3191A5CE1E221DA04CFE638233AE /* go-saffe-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "go-saffe-swift.release.xcconfig"; sourceTree = "<group>"; };
+		638DFE00916D861817248CF0B26AAAFE /* go-saffe-swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "go-saffe-swift.modulemap"; sourceTree = "<group>"; };
+		6406D347F5B7E18CF968F77629C4F06E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7F286C317A96995103BF7B081529E6D3 /* Pods-go-saffe-swift_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-go-saffe-swift_Example.modulemap"; sourceTree = "<group>"; };
 		86817DE510A92075F9A7AAC6E1DB4080 /* Pods-go-saffe-swift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-go-saffe-swift_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		891C8A6DD00A7FA8C70BA80BD4E8FD67 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		89DD56C2C1F49202BB964A70D95FF15E /* go-saffe-swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "go-saffe-swift-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EE0288AE58EFA4A5C5031681788C0E8 /* go-saffe-swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "go-saffe-swift-Info.plist"; sourceTree = "<group>"; };
+		A06B1A950DCA96B4EB3D977E7598274F /* GoSaffeCapture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GoSaffeCapture.swift; path = "go-saffe-swift/Classes/GoSaffeCapture.swift"; sourceTree = "<group>"; };
+		ABA2D74B2CB5176E324C7CC5921853E8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		B08CD53249A5A1BE0ED74B079FFB51F8 /* Pods-go-saffe-swift_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-go-saffe-swift_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B382C6E90D4D90304BA55AD710056C2A /* GoSaffeCapture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GoSaffeCapture.swift; path = "go-saffe-swift/Classes/GoSaffeCapture.swift"; sourceTree = "<group>"; };
-		B5FE0BFBF02A27E634FF7DA0DBF34F18 /* go-saffe-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "go-saffe-swift.release.xcconfig"; sourceTree = "<group>"; };
 		B9F4038A5EA19F8D8D196F441CA9929B /* Pods-go-saffe-swift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-go-saffe-swift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C0E73A1FCE32BBDC74AC04408AD76D13 /* go-saffe-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "go-saffe-swift.debug.xcconfig"; sourceTree = "<group>"; };
 		CF759B9EFDC7C81A970A4FCE1773E07F /* Pods-go-saffe-swift_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-go-saffe-swift_Example-Info.plist"; sourceTree = "<group>"; };
 		D0A782017DE61428EED834E98796DEEC /* Pods-go-saffe-swift_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-go-saffe-swift_Example"; path = Pods_go_saffe_swift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDE8D1DBBDBAE760F5C963192C0AE18B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E293EAE1414A52D57077C9B1A8A1AFF0 /* go-saffe-swift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "go-saffe-swift.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E7C9978096ECF3A9F7EAC791612E9A4D /* go-saffe-swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "go-saffe-swift-umbrella.h"; sourceTree = "<group>"; };
 		EE6EC7CB9D5AE12F8E8126767B46EB51 /* Pods-go-saffe-swift_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-go-saffe-swift_Tests"; path = Pods_go_saffe_swift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9C27F7E6D7B02625DF3B111E5192591 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		FDE858E2976CE479142768C15189874E /* Pods-go-saffe-swift_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-go-saffe-swift_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		10E4B5F34A6FD63CF70F317D0F40A878 /* Frameworks */ = {
+		29AA44A667E9C83F2037D66CEC4E8293 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40E4CD30D04EC705DFD8619778BD279E /* Foundation.framework in Frameworks */,
+				16EAA86F8D9DB5714975D18BAE907F31 /* Foundation.framework in Frameworks */,
+				56450B9728B718B3C66D25921F3F04AF /* UIKit.framework in Frameworks */,
+				DE73733A2AB8DA9C9085F37F31BF9E4F /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +106,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C9B21C82F9F434A1F20F0753288DC41 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C9E22D03CD600C6C7AE6EA622607D95 /* go-saffe-swift */ = {
+			isa = PBXGroup;
+			children = (
+				A06B1A950DCA96B4EB3D977E7598274F /* GoSaffeCapture.swift */,
+				D9C40F4DBF576EFA8D11411B8B412713 /* Pod */,
+				F1BE2B099F88C057528E297B22D3A2A4 /* Support Files */,
+			);
+			name = "go-saffe-swift";
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		31DF3DB52ACD699AFF821323C8E55E02 /* Pods-go-saffe-swift_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,10 +142,12 @@
 			path = "Target Support Files/Pods-go-saffe-swift_Example";
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+		4C9B21C82F9F434A1F20F0753288DC41 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				6406D347F5B7E18CF968F77629C4F06E /* Foundation.framework */,
+				F9C27F7E6D7B02625DF3B111E5192591 /* UIKit.framework */,
+				14F84C2F2F12231A8BDB489A37492222 /* WebKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -128,19 +155,9 @@
 		70A8087645E4474711198470CF042DB3 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FFA17F39BB9A29721EA0C55CE8182717 /* go-saffe-swift */,
+				2C9E22D03CD600C6C7AE6EA622607D95 /* go-saffe-swift */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		995F25AF4E069737EFF8AB1702900D90 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				30FA2C2DC2620520AAEF80AD5E29788D /* go-saffe-swift.podspec */,
-				891C8A6DD00A7FA8C70BA80BD4E8FD67 /* LICENSE */,
-				DDE8D1DBBDBAE760F5C963192C0AE18B /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		9E7F42F887D0181AAE6612860C051E71 /* Products */ = {
@@ -183,57 +200,40 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				70A8087645E4474711198470CF042DB3 /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
 				9E7F42F887D0181AAE6612860C051E71 /* Products */,
 				C4334790FF4E73DB7500F7EF34955080 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		D9C40F4DBF576EFA8D11411B8B412713 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
+				E293EAE1414A52D57077C9B1A8A1AFF0 /* go-saffe-swift.podspec */,
+				51E1FA5C346C2E09AFEE27100CC52370 /* LICENSE */,
+				ABA2D74B2CB5176E324C7CC5921853E8 /* README.md */,
 			);
-			name = Frameworks;
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		DEBF6F1118BD3115F62AB25D849F3CEB /* Support Files */ = {
+		F1BE2B099F88C057528E297B22D3A2A4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0C088B2C9963BADD399DAFCFA64CA0DE /* go-saffe-swift.modulemap */,
-				76A4BEC70FC52E7F43205B126D50164F /* go-saffe-swift-dummy.m */,
-				7B05F4D6E8E104BB4ADA56A1F8982734 /* go-saffe-swift-Info.plist */,
-				14701D1501F510F423FC067269320C18 /* go-saffe-swift-prefix.pch */,
-				89DD56C2C1F49202BB964A70D95FF15E /* go-saffe-swift-umbrella.h */,
-				C0E73A1FCE32BBDC74AC04408AD76D13 /* go-saffe-swift.debug.xcconfig */,
-				B5FE0BFBF02A27E634FF7DA0DBF34F18 /* go-saffe-swift.release.xcconfig */,
+				638DFE00916D861817248CF0B26AAAFE /* go-saffe-swift.modulemap */,
+				30EBB66A58BAD935D66234EC8ED1DF56 /* go-saffe-swift-dummy.m */,
+				9EE0288AE58EFA4A5C5031681788C0E8 /* go-saffe-swift-Info.plist */,
+				11980E8C8395D8FF0C5FD48624F9DD45 /* go-saffe-swift-prefix.pch */,
+				E7C9978096ECF3A9F7EAC791612E9A4D /* go-saffe-swift-umbrella.h */,
+				30DE087F0BD5C26EE751728C81420A34 /* go-saffe-swift.debug.xcconfig */,
+				5E0E3191A5CE1E221DA04CFE638233AE /* go-saffe-swift.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/go-saffe-swift";
 			sourceTree = "<group>";
 		};
-		FFA17F39BB9A29721EA0C55CE8182717 /* go-saffe-swift */ = {
-			isa = PBXGroup;
-			children = (
-				B382C6E90D4D90304BA55AD710056C2A /* GoSaffeCapture.swift */,
-				995F25AF4E069737EFF8AB1702900D90 /* Pod */,
-				DEBF6F1118BD3115F62AB25D849F3CEB /* Support Files */,
-			);
-			name = "go-saffe-swift";
-			path = ../..;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		08D1909507A829B2D31E0FDDFBFEE134 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B7AB23E8E6A6408B118008229F1BE0AC /* go-saffe-swift-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1AA61E4ABC4558B1709BDC64F7F7EE63 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -247,6 +247,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A753D8579EC1782A7BF838F9C73B694 /* Pods-go-saffe-swift_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDF6AA1E5C0029676C5AA300E455652 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B71FF6AEC9773F3ABBF3CD60352E3AF1 /* go-saffe-swift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +273,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				EE43253CF1A9C21122DC488790B543EB /* PBXTargetDependency */,
+				DAA65BB1BE1925DC3E17307A9B4448AF /* PBXTargetDependency */,
 			);
 			name = "Pods-go-saffe-swift_Tests";
 			productName = Pods_go_saffe_swift_Tests;
@@ -274,12 +282,12 @@
 		};
 		E8D2F37C1613B603A6F85631746F2F38 /* go-saffe-swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBE243721B1F3ED6A7F846B7A2259391 /* Build configuration list for PBXNativeTarget "go-saffe-swift" */;
+			buildConfigurationList = B334A771A3DDADFCBA4C48AEF5458D60 /* Build configuration list for PBXNativeTarget "go-saffe-swift" */;
 			buildPhases = (
-				08D1909507A829B2D31E0FDDFBFEE134 /* Headers */,
-				8756E78C704ED9C222AFC54425EA013D /* Sources */,
-				10E4B5F34A6FD63CF70F317D0F40A878 /* Frameworks */,
-				89DCEAEA07D062F403A0C97CE192AF52 /* Resources */,
+				FDDF6AA1E5C0029676C5AA300E455652 /* Headers */,
+				84ADA534A7AC95D1AE16550273CFB2B8 /* Sources */,
+				29AA44A667E9C83F2037D66CEC4E8293 /* Frameworks */,
+				6F27D52F9682BF2613D09DAA6C0A0888 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -339,7 +347,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		89DCEAEA07D062F403A0C97CE192AF52 /* Resources */ = {
+		6F27D52F9682BF2613D09DAA6C0A0888 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -379,12 +387,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8756E78C704ED9C222AFC54425EA013D /* Sources */ = {
+		84ADA534A7AC95D1AE16550273CFB2B8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0ABC26A960831B653A6F4EFA5EBA1A1 /* go-saffe-swift-dummy.m in Sources */,
-				CA5C56167FD1A19AD9490A5157656623 /* GoSaffeCapture.swift in Sources */,
+				AA45EBFDD9B2BD14D83658036586B3FB /* go-saffe-swift-dummy.m in Sources */,
+				4A422CF1C6463C734E932E017B2EC320 /* GoSaffeCapture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,15 +405,47 @@
 			target = E8D2F37C1613B603A6F85631746F2F38 /* go-saffe-swift */;
 			targetProxy = 03564F3165F13966E1DFD5AC521764E9 /* PBXContainerItemProxy */;
 		};
-		EE43253CF1A9C21122DC488790B543EB /* PBXTargetDependency */ = {
+		DAA65BB1BE1925DC3E17307A9B4448AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-go-saffe-swift_Example";
 			target = FD67C260F732074C0328440035D46918 /* Pods-go-saffe-swift_Example */;
-			targetProxy = B73F7817DD6F620CA19D09CB74C92810 /* PBXContainerItemProxy */;
+			targetProxy = 1C208319BED13D0677592856182113A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		10AC064C12DEE9F1C5BB69F031B11725 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E0E3191A5CE1E221DA04CFE638233AE /* go-saffe-swift.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/go-saffe-swift/go-saffe-swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/go-saffe-swift/go-saffe-swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/go-saffe-swift/go-saffe-swift.modulemap";
+				PRODUCT_MODULE_NAME = go_saffe_swift;
+				PRODUCT_NAME = go_saffe_swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		10FCD544E9CACCC6E03423C3A7D3B424 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 86817DE510A92075F9A7AAC6E1DB4080 /* Pods-go-saffe-swift_Tests.release.xcconfig */;
@@ -473,6 +513,37 @@
 			};
 			name = Debug;
 		};
+		6F34DFC50D23DD6DFB21E3A04AA97609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30DE087F0BD5C26EE751728C81420A34 /* go-saffe-swift.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/go-saffe-swift/go-saffe-swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/go-saffe-swift/go-saffe-swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/go-saffe-swift/go-saffe-swift.modulemap";
+				PRODUCT_MODULE_NAME = go_saffe_swift;
+				PRODUCT_NAME = go_saffe_swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -528,7 +599,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -567,37 +639,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		B76AC6D72D10E9EF191005EF8DDD95FE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0E73A1FCE32BBDC74AC04408AD76D13 /* go-saffe-swift.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/go-saffe-swift/go-saffe-swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/go-saffe-swift/go-saffe-swift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/go-saffe-swift/go-saffe-swift.modulemap";
-				PRODUCT_MODULE_NAME = go_saffe_swift;
-				PRODUCT_NAME = go_saffe_swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -665,38 +706,6 @@
 			};
 			name = Debug;
 		};
-		E0B1EC8C3465ED511BF47F1EAD154B7A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5FE0BFBF02A27E634FF7DA0DBF34F18 /* go-saffe-swift.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/go-saffe-swift/go-saffe-swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/go-saffe-swift/go-saffe-swift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/go-saffe-swift/go-saffe-swift.modulemap";
-				PRODUCT_MODULE_NAME = go_saffe_swift;
-				PRODUCT_NAME = go_saffe_swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		E38012CD8909AAD216BB229B70FB2E99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B9F4038A5EA19F8D8D196F441CA9929B /* Pods-go-saffe-swift_Tests.debug.xcconfig */;
@@ -760,11 +769,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBE243721B1F3ED6A7F846B7A2259391 /* Build configuration list for PBXNativeTarget "go-saffe-swift" */ = {
+		B334A771A3DDADFCBA4C48AEF5458D60 /* Build configuration list for PBXNativeTarget "go-saffe-swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B76AC6D72D10E9EF191005EF8DDD95FE /* Debug */,
-				E0B1EC8C3465ED511BF47F1EAD154B7A /* Release */,
+				6F34DFC50D23DD6DFB21E3A04AA97609 /* Debug */,
+				10AC064C12DEE9F1C5BB69F031B11725 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

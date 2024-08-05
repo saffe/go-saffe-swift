@@ -1,22 +1,26 @@
 {
   "name": "go-saffe-swift",
-  "version": "0.1.0",
-  "summary": "A short description of go-saffe-swift.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Pedro Cruz/go-saffe-swift",
+  "version": "1.1.0",
+  "summary": "Go saffe capture component for swift",
+  "description": "Go saffe capture component for swift",
+  "homepage": "https://github.com/saffe/go-saffe-swift",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "Pedro Cruz": "pedrovictor.lage@gmail.com"
+    "Pedro Cruz": "pedro@saffe.ai"
   },
   "source": {
-    "git": "https://github.com/Pedro Cruz/go-saffe-swift.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/saffe/go-saffe-swift.git",
+    "tag": "1.1.0"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "15.0"
   },
-  "source_files": "go-saffe-swift/Classes/**/*"
+  "source_files": "go-saffe-swift/**/*.{swift,h,m}",
+  "frameworks": [
+    "UIKit",
+    "WebKit"
+  ]
 }

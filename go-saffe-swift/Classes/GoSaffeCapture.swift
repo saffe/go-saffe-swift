@@ -1,7 +1,7 @@
 import UIKit
 import WebKit
 
-class GoSaffeCapture: UIViewController {
+public class GoSaffeCapture: UIViewController {
 
     var webView: WKWebView?
     let captureKey: String
@@ -12,7 +12,7 @@ class GoSaffeCapture: UIViewController {
     let onClose: () -> Void
     let onFinish: () -> Void
     
-    init(captureKey: String, userIdentifier: String, type: String, endToEndId: String, onClose: @escaping () -> Void, onFinish: @escaping () -> Void) {
+    public init(captureKey: String, userIdentifier: String, type: String, endToEndId: String, onClose: @escaping () -> Void, onFinish: @escaping () -> Void) {
         self.captureKey = captureKey
         self.userIdentifier = userIdentifier
         self.type = type
@@ -35,13 +35,13 @@ class GoSaffeCapture: UIViewController {
     }
     
     deinit {
-        print("LivenessViewController deinitialized")
+        
     }
 
     public override func viewDidLoad() {
         super.viewDidLoad()
         createWebView()
-        loadLiveness()
+        loadWebView()
     }
 
     func createWebView() {
@@ -69,7 +69,7 @@ class GoSaffeCapture: UIViewController {
         
     }
 
-    func loadLiveness() {
+    func loadWebView() {
         let urlString = "https://go.saffe.ai/v0/capture"
         guard let url = URL(string: urlString) else {
             return
@@ -94,7 +94,7 @@ class GoSaffeCapture: UIViewController {
 
 extension GoSaffeCapture: WKNavigationDelegate {
 
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+    public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         let script = """
         (function() {
             window.addEventListener('message', function(event) {
@@ -105,7 +105,7 @@ extension GoSaffeCapture: WKNavigationDelegate {
         webView.evaluateJavaScript(script, completionHandler: nil)
     }
 
-    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+    public func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
         // Falha na navegação
     }
 
@@ -113,7 +113,7 @@ extension GoSaffeCapture: WKNavigationDelegate {
 
 extension GoSaffeCapture: WKScriptMessageHandler {
 
-    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+    public func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         if message.name == "receiveMessage" {
             if let args = message.body as? [String: Any],
                let source = args["source"] as? String, source == "go-saffe-capture",
