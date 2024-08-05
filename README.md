@@ -18,6 +18,7 @@ target 'YourAppTarget' do
 
   pod 'go-saffe-swift'
 end
+```
 
 ## Example
 
