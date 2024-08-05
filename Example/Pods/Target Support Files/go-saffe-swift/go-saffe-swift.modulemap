@@ -1,0 +1,6 @@
+framework module go_saffe_swift {
+  umbrella header "go-saffe-swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

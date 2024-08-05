@@ -1,0 +1,16 @@
+PODS:
+  - go-saffe-swift (1.1.0)
+
+DEPENDENCIES:
+  - go-saffe-swift (from `../`)
+
+EXTERNAL SOURCES:
+  go-saffe-swift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  go-saffe-swift: 7c3dff3f6eec1df5f0002002a8148a8693c2a2a5
+
+PODFILE CHECKSUM: 112c6112100e9614af28491ed30575e6db934b2f
+
+COCOAPODS: 1.15.2

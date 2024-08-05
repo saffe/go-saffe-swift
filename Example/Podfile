@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'go-saffe-swift_Example' do
+  pod 'go-saffe-swift', :path => '../'
+
+  target 'go-saffe-swift_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
