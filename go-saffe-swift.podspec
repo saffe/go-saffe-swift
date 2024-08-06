@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'go-saffe-swift'
-  s.version          = '1.1.0'
+  s.version          = '1.2.0'
   s.summary          = 'Go saffe capture component for swift'
   s.description      = <<-DESC
   Go saffe capture component for swift
