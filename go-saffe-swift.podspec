@@ -1,11 +1,12 @@
 Pod::Spec.new do |s|
   s.name             = 'go-saffe-swift'
-  s.version          = '1.2.0'
+  s.version          = '1.2.1'
   s.summary          = 'Go saffe capture component for swift'
   s.description      = <<-DESC
   Go saffe capture component for swift
                        DESC
   s.homepage         = 'https://github.com/saffe/go-saffe-swift'
+  s.readme           = 'https://raw.githubusercontent.com/saffe/go-saffe-swift/1.2.0/README.md'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Pedro Cruz' => 'pedro@saffe.ai' }
   s.source           = { :git => 'https://github.com/saffe/go-saffe-swift.git', :tag => s.version.to_s }
