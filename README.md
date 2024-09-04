@@ -47,6 +47,9 @@ class ViewController: UIViewController {
             },
             onFinish: {
                 print("Capture finished")
+            },
+            onTimeout: {
+                print("Capture timeout")
             }
         )
         
@@ -99,6 +102,9 @@ struct GoSaffeCaptureView: UIViewControllerRepresentable {
             },
             onFinish: {
                 print("Capture finished")
+            },
+            onTimeout: {
+                print("Capture timeout")
             }
         )
         return goSaffeCapture
