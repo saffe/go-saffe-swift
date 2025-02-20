@@ -27,6 +27,9 @@ class ViewController: UIViewController {
             },
             onFinish: {
                 print("Capture finished")
+            },
+            onTimeout: {
+                print("Capture timed out")
             }
         )
                 

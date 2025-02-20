@@ -18,6 +18,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1221A1B52D66F7CA00C15C5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D65055B2C5BF94000EC51F1 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C263099E67D20389FE71727718389BB;
+			remoteInfo = IOSSecuritySuite;
+		};
 		3D6505612C5BF94000EC51F1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3D65055B2C5BF94000EC51F1 /* Pods.xcodeproj */;
@@ -94,9 +101,10 @@
 		3D65055C2C5BF94000EC51F1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3D6505622C5BF94000EC51F1 /* go-saffe-swift */,
-				3D6505642C5BF94000EC51F1 /* Pods-go-saffe-swift_Example */,
-				3D6505662C5BF94000EC51F1 /* Pods-go-saffe-swift_Tests */,
+				3D6505622C5BF94000EC51F1 /* go_saffe_swift.framework */,
+				1221A1B62D66F7CA00C15C5C /* IOSSecuritySuite.framework */,
+				3D6505642C5BF94000EC51F1 /* Pods_go_saffe_swift_Example.framework */,
+				3D6505662C5BF94000EC51F1 /* Pods_go_saffe_swift_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -281,26 +289,30 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		3D6505622C5BF94000EC51F1 /* go-saffe-swift */ = {
+		1221A1B62D66F7CA00C15C5C /* IOSSecuritySuite.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			name = "go-saffe-swift";
+			path = IOSSecuritySuite.framework;
+			remoteRef = 1221A1B52D66F7CA00C15C5C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D6505622C5BF94000EC51F1 /* go_saffe_swift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
 			path = go_saffe_swift.framework;
 			remoteRef = 3D6505612C5BF94000EC51F1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3D6505642C5BF94000EC51F1 /* Pods-go-saffe-swift_Example */ = {
+		3D6505642C5BF94000EC51F1 /* Pods_go_saffe_swift_Example.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			name = "Pods-go-saffe-swift_Example";
 			path = Pods_go_saffe_swift_Example.framework;
 			remoteRef = 3D6505632C5BF94000EC51F1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3D6505662C5BF94000EC51F1 /* Pods-go-saffe-swift_Tests */ = {
+		3D6505662C5BF94000EC51F1 /* Pods_go_saffe_swift_Tests.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			name = "Pods-go-saffe-swift_Tests";
 			path = Pods_go_saffe_swift_Tests.framework;
 			remoteRef = 3D6505652C5BF94000EC51F1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -357,10 +369,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-go-saffe-swift_Example/Pods-go-saffe-swift_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IOSSecuritySuite/IOSSecuritySuite.framework",
 				"${BUILT_PRODUCTS_DIR}/go-saffe-swift/go_saffe_swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IOSSecuritySuite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/go_saffe_swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

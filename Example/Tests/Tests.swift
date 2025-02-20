@@ -6,15 +6,17 @@ class Tests: XCTestCase {
     var goSaffeCapture: GoSaffeCapture!
     var onCloseCalled = false
     var onFinishCalled = false
+    var onTimeoutCalled = false
 
     override func setUp() {
         super.setUp()
         onCloseCalled = false
         onFinishCalled = false
+        onTimeoutCalled = false
         
         goSaffeCapture = GoSaffeCapture(
             captureKey: "testCaptureKey",
-            userIdentifier: "testUserIdentifier",
+            user: "testUserIdentifier",
             type: "testType",
             endToEndId: "testEndToEndId",
             onClose: { [weak self] in
@@ -22,6 +24,9 @@ class Tests: XCTestCase {
             },
             onFinish: { [weak self] in
                 self?.onFinishCalled = true
+            },
+            onTimeout: { [weak self] in
+                self?.onTimeoutCalled = true
             }
         )
     }

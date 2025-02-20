@@ -2,13 +2,17 @@
 
 ## Requirements
 
-- iOS 12.0+
-- Xcode 11+
-- Swift 5.0+
+- **iOS 12.0+**
+- **Xcode 11+**
+- **Swift 5.0+**
+
+---
 
 ## Installation
 
-To integrate `go-saffe-swift` into your Xcode project using CocoaPods, specify it in your `Podfile`:
+### CocoaPods
+
+To integrate `go-saffe-swift` into your Xcode project using CocoaPods, add the following line to your `Podfile`:
 
 ```ruby
 platform :ios, '12.0'
@@ -20,8 +24,36 @@ target 'YourAppTarget' do
 end
 ```
 
-## Example
+After editing the Podfile, run:
 
+```bash
+pod install
+```
+
+---
+
+## Required Permissions
+
+To make `go-saffe-swift` work correctly, you need to add permissions in your project's `Info.plist`. Include the following keys:
+
+### Camera
+```xml
+<key>NSCameraUsageDescription</key>
+<string>This app requires camera access to capture images.</string>
+```
+
+### Location
+> **Note:** Location permission is optional. To enable location, activate it in the settings and add:
+```xml
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>This app requires access to your location while using the app.</string>
+```
+
+---
+
+## Example Usage
+
+### UIKit
 
 ```swift
 import UIKit
@@ -53,16 +85,15 @@ class ViewController: UIViewController {
             }
         )
         
-        // Present GoSaffeCapture
+        // Present GoSaffeCapture as a modal screen
         self.present(goSaffeCapture, animated: true, completion: nil)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
 ```
+
+---
+
+### SwiftUI
 
 ```swift
 import SwiftUI
@@ -94,7 +125,7 @@ struct GoSaffeCaptureView: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> GoSaffeCapture {
         let goSaffeCapture = GoSaffeCapture(
             captureKey: "exampleCaptureKey",
-            userIdentifier: "exampleUserIdentifier",
+            user: "exampleUserIdentifier",
             type: "exampleType",
             endToEndId: "exampleEndToEndId",
             onClose: {
@@ -111,7 +142,7 @@ struct GoSaffeCaptureView: UIViewControllerRepresentable {
     }
 
     func updateUIViewController(_ uiViewController: GoSaffeCapture, context: Context) {
-        // Leave this empty since there's no need to update the view controller
+        // No need to update the view controller
     }
 }
 
@@ -122,12 +153,16 @@ struct ContentView_Previews: PreviewProvider {
 }
 ```
 
+---
+
+
 ## Author
 
-Pedro Cruz, pedro@saffe.ai
-Caio França, caiofranca5@hotmail.com
+- **Pedro Cruz** - [pedro@saffe.ai](mailto:pedro@saffe.ai)  
+- **Caio França** - [caiofranca5@hotmail.com](mailto:caiofranca5@hotmail.com)
 
+---
 
 ## License
 
-go-saffe-swift is available under the MIT license. See the LICENSE file for more info.
+`go-saffe-swift` is available under the MIT license. See the [LICENSE](./LICENSE) file for more info.

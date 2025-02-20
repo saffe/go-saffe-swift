@@ -1,5 +1,6 @@
 import UIKit
 import WebKit
+import IOSSecuritySuite
 
 public class GoSaffeCapture: UIViewController {
 
@@ -74,15 +75,19 @@ public class GoSaffeCapture: UIViewController {
 
     func loadWebView() {
         let urlString = "https://go.saffe.ai/v0/capture"
+        
         guard let url = URL(string: urlString) else {
             return
         }
+        
         let json: [String: Any] = [
             "capture_key": captureKey,
             "user_identifier": user,
             "type": type,
-            "end_to_end_id": endToEndId
+            "end_to_end_id": endToEndId,
+            "device_context": getDeviceContext(),
         ]
+        
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
 
         var request = URLRequest(url: url)
@@ -91,6 +96,14 @@ public class GoSaffeCapture: UIViewController {
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
 
         webView?.load(request)
+    }
+    
+    func getDeviceContext() -> [String: Bool] {
+        var json: [String: Bool] = [:]
+        json["isJailBroken"] = IOSSecuritySuite.amIJailbroken()
+        json["isRealDevice"] = !IOSSecuritySuite.amIRunInEmulator()
+        
+        return json
     }
 
 }
