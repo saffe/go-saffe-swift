@@ -2,6 +2,22 @@ import UIKit
 import WebKit
 import IOSSecuritySuite
 
+protocol Settings {
+    var primaryColor: String? { get }
+    var secondaryColor: String? { get }
+    var lang : String? { get }
+}
+
+protocol SendResultsTo {
+    var media: String { get }
+    var email: String { get }
+}
+
+protocol ExtraData {
+    var settings : Settings? { get }
+    var sendResultsTo : SendResultsTo? { get }
+}
+
 public class GoSaffeCapture: UIViewController {
 
     var webView: WKWebView?
@@ -13,6 +29,7 @@ public class GoSaffeCapture: UIViewController {
     let onClose: () -> Void
     let onFinish: () -> Void
     let onTimeout: () -> Void
+    let extraData: ExtraData?
     
     public init(captureKey: String, user: String, type: String, endToEndId: String, onClose: @escaping () -> Void, onFinish: @escaping () -> Void, onTimeout: @escaping () -> Void) {
         self.captureKey = captureKey
@@ -86,6 +103,7 @@ public class GoSaffeCapture: UIViewController {
             "type": type,
             "end_to_end_id": endToEndId,
             "device_context": getDeviceContext(),
+            "extra_data": parseExtraData(extraData: extraData)
         ]
         
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
@@ -104,6 +122,28 @@ public class GoSaffeCapture: UIViewController {
         json["isRealDevice"] = !IOSSecuritySuite.amIRunInEmulator()
         
         return json
+    }
+    
+    func parseExtraData(extraData: ExtraData?) -> [String: Any] {
+        guard let extraData = extraData else { return [:] }
+        var result: [String: Any] = [:]
+        
+        if let settings = extraData.settings {
+            var settingsDict: [String: Any] = [:]
+            settingsDict["primary_color"] = settings.primaryColor
+            settingsDict["secondary_color"] = settings.secondaryColor
+            settingsDict["lang"] = settings.lang
+            result["settings"] = settingsDict
+        }
+        
+        if let sendResultsTo = extraData.sendResultsTo {
+            var sendResultsToDict: [String: Any] = [:]
+            sendResultsToDict["media"] = sendResultsTo.media
+            sendResultsToDict["email"] = sendResultsTo.email
+            result["send_results_to"] = sendResultsToDict
+        }
+        
+        return result
     }
 
 }
