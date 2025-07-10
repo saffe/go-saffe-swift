@@ -2,6 +2,16 @@ import UIKit
 import WebKit
 import IOSSecuritySuite
 
+public protocol Settings {
+    var primaryColor: String? { get }
+    var secondaryColor: String? { get }
+    var lang : String? { get }
+}
+
+public protocol ExtraData {
+    var settings : Settings? { get }
+}
+
 public class GoSaffeCapture: UIViewController {
 
     var webView: WKWebView?
@@ -13,8 +23,9 @@ public class GoSaffeCapture: UIViewController {
     let onClose: () -> Void
     let onFinish: () -> Void
     let onTimeout: () -> Void
+    let extraData: ExtraData?
     
-    public init(captureKey: String, user: String, type: String, endToEndId: String, onClose: @escaping () -> Void, onFinish: @escaping () -> Void, onTimeout: @escaping () -> Void) {
+    public init(captureKey: String, user: String, type: String, endToEndId: String, onClose: @escaping () -> Void, onFinish: @escaping () -> Void, onTimeout: @escaping () -> Void, extraData: ExtraData? = nil) {
         self.captureKey = captureKey
         self.user = user
         self.type = type
@@ -22,6 +33,7 @@ public class GoSaffeCapture: UIViewController {
         self.onClose = onClose
         self.onFinish = onFinish
         self.onTimeout = onTimeout
+        self.extraData = extraData
         super.init(nibName: nil, bundle: nil)
         self.webView = WKWebView(frame: .zero, configuration: WKWebViewConfiguration())
         self.webView?.navigationDelegate = self
@@ -35,6 +47,7 @@ public class GoSaffeCapture: UIViewController {
         self.onClose = {}
         self.onFinish = {}
         self.onTimeout = {}
+        self.extraData = nil
         super.init(coder: coder)
     }
     
@@ -86,6 +99,7 @@ public class GoSaffeCapture: UIViewController {
             "type": type,
             "end_to_end_id": endToEndId,
             "device_context": getDeviceContext(),
+            "extra_data": parseExtraData(extraData: extraData)
         ]
         
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
@@ -104,6 +118,21 @@ public class GoSaffeCapture: UIViewController {
         json["isRealDevice"] = !IOSSecuritySuite.amIRunInEmulator()
         
         return json
+    }
+    
+    func parseExtraData(extraData: ExtraData?) -> [String: Any] {
+        guard let extraData = extraData else { return [:] }
+        var result: [String: Any] = [:]
+        
+        if let settings = extraData.settings {
+            var settingsDict: [String: Any] = [:]
+            settingsDict["primary_color"] = settings.primaryColor
+            settingsDict["secondary_color"] = settings.secondaryColor
+            settingsDict["lang"] = settings.lang
+            result["settings"] = settingsDict
+        }
+        
+        return result
     }
 
 }

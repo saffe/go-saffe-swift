@@ -155,6 +155,112 @@ struct ContentView_Previews: PreviewProvider {
 
 ---
 
+## The `extraData` parameter
+
+The `extraData` parameter is optional and allows for dynamic changes specific to the transaction, such as language and colors. It's a named parameter, so you only need to include it when you want to customize the component. If you don't want any customization, simply omit it.
+
+Primary and secondary colors should be informed in hexadecimal code. Possible values for the key "lang" at the moment are "en" so that the capture interface is presented in english, "pt" for the language to be portuguese, and "es" for spanish.
+
+### ExtraData Structure
+
+```swift
+// Implement the required protocols
+struct MySettings: Settings {
+    var primaryColor: String?
+    var secondaryColor: String?
+    var lang: String?
+}
+
+struct MyExtraData: ExtraData {
+    var settings: Settings?
+}
+```
+
+### Usage Example - UIKit
+
+```swift
+import UIKit
+import go_saffe_swift
+
+class ViewController: UIViewController {
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        // Configure extra data
+        let settings = MySettings(
+            primaryColor: "#00ABAB",
+            secondaryColor: "#6A6A6A", 
+            lang: "en"
+        )
+        
+        let extraData = MyExtraData(settings: settings)
+        
+        let goSaffeCapture = GoSaffeCapture(
+            captureKey: "your-capture-key",
+            user: "example@email.com",
+            type: "verification",
+            endToEndId: "exampleEndToEndId",
+            onClose: {
+                print("Capture closed")
+            },
+            onFinish: {
+                print("Capture finished")
+            },
+            onTimeout: {
+                print("Capture timeout")
+            },
+            extraData: extraData
+        )
+        
+        self.present(goSaffeCapture, animated: true, completion: nil)
+    }
+}
+```
+
+### Usage Example - SwiftUI
+
+```swift
+import SwiftUI
+import go_saffe_swift
+
+struct GoSaffeCaptureView: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> GoSaffeCapture {
+        // Configure extra data
+        let settings = MySettings(
+            primaryColor: "#00ABAB",
+            secondaryColor: "#6A6A6A",
+            lang: "en"
+        )
+        
+        let extraData = MyExtraData(settings: settings)
+        
+        let goSaffeCapture = GoSaffeCapture(
+            captureKey: "your-capture-key",
+            user: "example@email.com",
+            type: "verification",
+            endToEndId: "exampleEndToEndId",
+            onClose: {
+                print("Capture closed")
+            },
+            onFinish: {
+                print("Capture finished")
+            },
+            onTimeout: {
+                print("Capture timeout")
+            },
+            extraData: extraData
+        )
+        
+        return goSaffeCapture
+    }
+
+    func updateUIViewController(_ uiViewController: GoSaffeCapture, context: Context) {
+        // No updates needed
+    }
+}
+```
+
+---
 
 ## Author
 
