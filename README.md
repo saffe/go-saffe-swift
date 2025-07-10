@@ -155,9 +155,11 @@ struct ContentView_Previews: PreviewProvider {
 
 ---
 
-## Extra Data (Optional)
+## The `extraData` parameter
 
-The `extraData` parameter allows you to customize additional settings for `GoSaffeCapture`. This parameter is optional and can be used to configure interface colors and language.
+The `extraData` parameter is optional and allows for dynamic changes specific to the transaction, such as language and colors. It's a named parameter, so you only need to include it when you want to customize the component. If you don't want any customization, simply omit it.
+
+Primary and secondary colors should be informed in hexadecimal code. Possible values for the key "lang" at the moment are "en" so that the capture interface is presented in english, "pt" for the language to be portuguese, and "es" for spanish.
 
 ### ExtraData Structure
 
@@ -187,8 +189,8 @@ class ViewController: UIViewController {
         // Configure extra data
         let settings = MySettings(
             primaryColor: "#00ABAB",
-            secondaryColor: "#4ECDC4", 
-            lang: "pt"
+            secondaryColor: "#6A6A6A", 
+            lang: "en"
         )
         
         let extraData = MyExtraData(settings: settings)
@@ -207,7 +209,7 @@ class ViewController: UIViewController {
             onTimeout: {
                 print("Capture timeout")
             },
-            extraData: extraData // Optional parameter
+            extraData: extraData
         )
         
         self.present(goSaffeCapture, animated: true, completion: nil)
@@ -226,8 +228,8 @@ struct GoSaffeCaptureView: UIViewControllerRepresentable {
         // Configure extra data
         let settings = MySettings(
             primaryColor: "#00ABAB",
-            secondaryColor: "#4ECDC4",
-            lang: "pt"
+            secondaryColor: "#6A6A6A",
+            lang: "en"
         )
         
         let extraData = MyExtraData(settings: settings)
@@ -246,7 +248,7 @@ struct GoSaffeCaptureView: UIViewControllerRepresentable {
             onTimeout: {
                 print("Capture timeout")
             },
-            extraData: extraData // Optional parameter
+            extraData: extraData
         )
         
         return goSaffeCapture
@@ -256,29 +258,6 @@ struct GoSaffeCaptureView: UIViewControllerRepresentable {
         // No updates needed
     }
 }
-```
-
-### Available Parameters
-
-- **primaryColor**: Primary interface color (hexadecimal format, e.g., "#FF6B6B")
-- **secondaryColor**: Secondary interface color (hexadecimal format, e.g., "#4ECDC4")
-- **lang**: Interface language (e.g., "pt", "en", "es")
-
-### Usage without ExtraData
-
-If you don't need custom settings, you can omit the `extraData` parameter:
-
-```swift
-let goSaffeCapture = GoSaffeCapture(
-    captureKey: "your-capture-key",
-    user: "example@email.com",
-    type: "verification",
-    endToEndId: "exampleEndToEndId",
-    onClose: { print("Capture closed") },
-    onFinish: { print("Capture finished") },
-    onTimeout: { print("Capture timeout") }
-    // extraData is optional - no need to specify
-)
 ```
 
 ---
