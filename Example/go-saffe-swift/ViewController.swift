@@ -9,6 +9,16 @@
 import UIKit
 import go_saffe_swift
 
+struct ExampleSettings: Settings {
+    var primaryColor: String?
+    var secondaryColor: String?
+    var lang: String?
+}
+
+struct ExampleExtraData: ExtraData {
+    var settings: Settings?
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -17,9 +27,17 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        let extraData = ExampleExtraData(
+            settings: ExampleSettings(
+                primaryColor: "#00ABAB",
+                secondaryColor: "#6A6A6A",
+                lang: "en"
+            )
+        )
+
         let goSaffeCapture = GoSaffeCapture(
-            captureKey: "captureKey",
-            user: "",
+            captureKey: "your-capture-key",
+            user: "example@email.com",
             type: "verification",
             endToEndId: "exampleEndToEndId",
             onClose: {
@@ -30,7 +48,8 @@ class ViewController: UIViewController {
             },
             onTimeout: {
                 print("Capture timed out")
-            }
+            },
+            extraData: extraData
         )
                 
         self.present(goSaffeCapture, animated: true, completion: nil)
@@ -42,4 +61,3 @@ class ViewController: UIViewController {
     }
 
 }
-

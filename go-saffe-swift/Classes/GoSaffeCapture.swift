@@ -12,6 +12,40 @@ public protocol ExtraData {
     var settings : Settings? { get }
 }
 
+struct CapturePayload {
+    let captureKey: String
+    let userIdentifier: String
+    let type: String
+    let endToEndId: String
+    let deviceContext: [String: Bool]
+    let extraData: ExtraData?
+
+    func jsonObject() -> [String: Any] {
+        var json: [String: Any] = [
+            "capture_key": captureKey,
+            "user_identifier": userIdentifier,
+            "type": type,
+            "end_to_end_id": endToEndId,
+            "device_context": deviceContext
+        ]
+
+        if let settings = extraData?.settings.flatMap(Self.jsonObject(for:)) {
+            json["settings"] = settings
+        }
+
+        return json
+    }
+
+    private static func jsonObject(for settings: Settings) -> [String: Any]? {
+        var json: [String: Any] = [:]
+        json["primary_color"] = settings.primaryColor
+        json["secondary_color"] = settings.secondaryColor
+        json["lang"] = settings.lang
+
+        return json.isEmpty ? nil : json
+    }
+}
+
 public class GoSaffeCapture: UIViewController {
 
     var webView: WKWebView?
@@ -93,16 +127,15 @@ public class GoSaffeCapture: UIViewController {
             return
         }
         
-        let json: [String: Any] = [
-            "capture_key": captureKey,
-            "user_identifier": user,
-            "type": type,
-            "end_to_end_id": endToEndId,
-            "device_context": getDeviceContext(),
-            "extra_data": parseExtraData(extraData: extraData)
-        ]
-        
-        let jsonData = try? JSONSerialization.data(withJSONObject: json)
+        let payload = CapturePayload(
+            captureKey: captureKey,
+            userIdentifier: user,
+            type: type,
+            endToEndId: endToEndId,
+            deviceContext: getDeviceContext(),
+            extraData: extraData)
+
+        let jsonData = try? JSONSerialization.data(withJSONObject: payload.jsonObject())
 
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
@@ -118,21 +151,6 @@ public class GoSaffeCapture: UIViewController {
         json["isRealDevice"] = !IOSSecuritySuite.amIRunInEmulator()
         
         return json
-    }
-    
-    func parseExtraData(extraData: ExtraData?) -> [String: Any] {
-        guard let extraData = extraData else { return [:] }
-        var result: [String: Any] = [:]
-        
-        if let settings = extraData.settings {
-            var settingsDict: [String: Any] = [:]
-            settingsDict["primary_color"] = settings.primaryColor
-            settingsDict["secondary_color"] = settings.secondaryColor
-            settingsDict["lang"] = settings.lang
-            result["settings"] = settingsDict
-        }
-        
-        return result
     }
 
 }
