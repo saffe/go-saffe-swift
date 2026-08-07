@@ -11,11 +11,13 @@ xcuserdata/
 .build/
 .swiftpm/
 
-# CocoaPods
+# CocoaPods (install locally with `pod install` — do not commit)
 Pods/
+**/Pods/
 Podfile.lock
+**/Podfile.lock
 *.podspec.json
-!*.podspec  # Mantenha o podspec para distribuição
+!*.podspec  # Keep the library podspec for distribution
 
 # Carthage
 Carthage/Build/
